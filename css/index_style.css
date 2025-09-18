@@ -1,0 +1,39 @@
+body {
+    background-color: #FEFBFA;
+}
+
+header {
+    background-color: #FEFBFA;
+}
+
+hr {
+    opacity: 0.1;
+}
+
+#about-me {
+    font-size: 0.9em;
+}
+
+.button-in-projs {
+    position: absolute;
+    bottom: 0;
+    right: 5pt;
+}
+
+.button-in-projs button {
+    margin-right: 10pt;
+}
+
+footer {
+    background-color: #00274C;
+    color: white;
+}
+
+footer i {
+    color: white;
+}
+
+#Sequence\ Models\ in\ 3D\ MRI\ Brain\ Metastases\ Detection div.row img.img-fluid {
+    height: 10cm;
+    width: auto;
+}
