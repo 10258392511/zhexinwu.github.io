@@ -1,9 +1,43 @@
+html {
+    /* Belt-and-braces: nothing here should need to scroll sideways, on any
+       device, but this keeps a stray overflow from a wrapped header/nav
+       from ever showing a horizontal scrollbar. */
+    overflow-x: hidden;
+}
+
 body {
     background-color: #FEFBFA;
 }
 
 header {
     background-color: #FEFBFA;
+}
+
+.header-logos {
+    gap: 0.5rem;
+}
+
+.header-logos img {
+    width: 80px;
+}
+
+/* Small phones: shrink the logo row and nav pills so the fixed header stays
+   compact instead of wrapping across many lines. Body padding is kept in
+   sync with the header's real height by js/index_js.js, so this is purely
+   about keeping things tidy rather than avoiding overlap. */
+@media (max-width: 576px) {
+    .header-logos {
+        gap: 0.25rem;
+    }
+
+    .header-logos img {
+        width: 48px;
+    }
+
+    header .nav-link {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.85rem;
+    }
 }
 
 hr {
